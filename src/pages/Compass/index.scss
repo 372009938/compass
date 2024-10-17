@@ -1,0 +1,54 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #333; 
+    position: relative;
+}
+.compass {
+    height: 630px;
+    width: 630px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.disk {
+    transform: rotate(90deg);
+    position: relative;
+    height: 630px;
+    width: 630px;
+}
+
+.label {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    transition: left 1s, top 1s;
+    /* transform-origin: 1 0; */
+    /* color: rgb(251, 255, 0); */
+    color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+
+.circle {
+    position: absolute;
+}
+
+.section{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 24px 24px 0 24px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 8px;
+}
+.dynamic-delete-button {
+    position: relative;
+    top: 4px;
+    margin: 0 8px;
+    color: #999;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
